@@ -15,6 +15,8 @@ body {
   border-bottom: 1px solid #f6f6f6;
 }
 
+/* text */
+
 .text-green {
   color: #00dc64;
 }
@@ -23,9 +25,35 @@ body {
   color: white;
 }
 
+.text-gray {
+  color: #666;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-15 {
+  font-size: 15px;
+}
+
+.text-xl {
+  font-size: 20px;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
 .bg-green {
   background-color: #00dc64;
 }
+
+/* flex */
 
 .flex {
   display: flex;
@@ -43,9 +71,39 @@ body {
   justify-content: space-between;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-2 {
+  gap: 2px;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+/* margin or padding */
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
 .px-18 {
   padding-left: 18px;
   padding-right: 18px;
+}
+
+.pt-12 {
+  padding-top: 12px;
 }
 
 .creator-btn {
@@ -57,4 +115,13 @@ body {
   padding-left: 18px;
   padding-right: 18px;
   line-height: 55px; /* line-height: 글자의 행간(줄 높이)을 조정하는 속성  */
+}
+
+.daily-child {
+  width: 230px;
+  margin-right: 10px;
+}
+
+.daily-child:last-child {
+  margin-right: 0;
 }
