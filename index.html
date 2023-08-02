@@ -13,9 +13,68 @@
   </head>
   <body>
     <!-- Header -->
-    <div>
+    <header>
+      <div class="screen-w">
+        <div class="flex justify-between items-center" style="height: 63px">
+          <div class="flex items-center" style="gap: 10px">
+            <svg
+              width="60"
+              height="12"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+            >
+              <defs>
+                <path id="text_naver_svg__a" d="M0 0h10.875v11.436H0z"></path>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="m17.154 0-4.485 11.436h3.812l.541-1.514h4.299l.54 1.514h3.813L21.19 0h-4.036zm2.018 3.603 1.277 3.572h-2.556l1.279-3.572zM37.895 0v11.436h9.025V8.633h-5.382V7.09h5.214V4.345h-5.214V2.803h5.27V0zm-4.989 0-2.691 7.52L27.525 0h-3.813l4.485 11.436h4.036L36.717 0zM7.792 0v6.12L3.532 0H0v11.436h3.7v-6.12l4.26 6.12h3.531V0z"
+                  fill="#1E1E1E"
+                ></path>
+                <g transform="translate(48.714)">
+                  <mask id="text_naver_svg__b" fill="#fff">
+                    <use xlink:href="#text_naver_svg__a"></use>
+                  </mask>
+                  <path
+                    d="M5.494 5.325H3.532v-2.41h1.962a1.205 1.205 0 0 1 0 2.41zm2.49 2.187.347-.145c1.328-.556 2.005-1.76 2.005-3.287 0-1.445-.527-2.513-1.566-3.177C7.804.287 6.55 0 4.828 0H0v11.436h3.588V8.24h1.29l2.186 3.195h3.811L7.984 7.512z"
+                    fill="#1E1E1E"
+                    mask="url(#text_naver_svg__b)"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <svg
+              width="42"
+              height="27"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M19.44 23.632v-7.008h-3.096v1.2H7.152V16.48H3.984v7.152H19.44zM11.28 6.664c0-1.944-2.112-3.312-4.776-3.312-2.712 0-4.776 1.368-4.776 3.312 0 1.944 2.064 3.288 4.776 3.288 2.664 0 4.776-1.344 4.776-3.288zm-1.656 8.424h2.688v.672h2.904V2.896h-2.904V13.12H9.624v1.968zm9.816.696V2.512h-3v13.272h3zm-11.808-.168V12.76a64.207 64.207 0 0 0 3.816-.432l-.216-2.256c-2.712.432-6.144.456-9.6.456h-.84c.072.816.192 1.656.288 2.496C2.16 13 3.36 13 4.632 12.928v2.688h3zm8.712 5.592H7.152v-1.032h9.192v1.032zM8.352 6.688c0 .6-.792 1.08-1.848 1.08-1.104 0-1.896-.48-1.896-1.08 0-.6.792-1.08 1.896-1.08 1.056 0 1.848.48 1.848 1.08zm29.832 2.856v-2.4H27.336V6.04H38.52V3.568H24.192v9.408h14.496v-2.4H27.336V9.544h10.848zm-4.992 10.104v-2.976h7.848v-2.544H21.72v2.544H30v2.976h3.192zm5.424 3.744V20.92H27.312v-3.216h-3.144v5.688h14.448z"
+                fill="#020202"
+              ></path>
+            </svg>
+          </div>
+          <div class="flex items-center" style="gap: 18px">
+            <form class="search_form flex items-center">
+              <input
+                type="text"
+                placeholder="제목/작가로 검색할 수 있습니다."
+                class="search_input"
+              />
+              <div class="search_icon">
+                <i class="fas fa-search"></i>
+              </div>
+            </form>
+            <div style="color: gray; display: inline-flex">
+              <i class="fas fa-th"></i>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="header_container">
-        <div class="screen-w">
+        <nav class="screen-w">
           <div class="flex justify-between items-center">
             <div class="flex items-center">
               <div class="bg-green text-white nav-child">홈</div>
@@ -24,11 +83,14 @@
               <div class="nav-child">도전만화</div>
               <div class="nav-child">마이페이지</div>
             </div>
-            <div class="bg-green text-white creator-btn">CREATOR'S</div>
+            <div class="bg-green text-white creator-btn relative">
+              CREATOR'S
+              <div class="n_icon absolute" style="top: 6px; right: 18px">N</div>
+            </div>
           </div>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
 
     <div class="screen-w">
       <!-- Daily -->
@@ -135,5 +197,10 @@
         </ul>
       </div>
     </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
